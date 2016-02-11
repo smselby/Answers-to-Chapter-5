@@ -1,0 +1,23 @@
+myCats = {'Maenad': 'tabby', 'Nancy': 'black', 'Jack': 'grey', 'Waldo': 'ginger'}
+while True:
+    print('Enter a name: (blank to quit)')
+    name = input()
+    if name == '':
+        break
+    if name in myCats:
+        print(myCats[name] + ' is the color of ' + name)
+    else:
+        print('I do not have that cat information for ' + name)
+        print('Are they a cat?')
+        cat = input()
+        myCats[name] = cat
+        print('Cat database updated.')
+
+for k in myCats.keys():
+	print(k)
+
+for v in myCats.values():
+	print(v)
+
+for i in myCats.items():
+	print(i)
